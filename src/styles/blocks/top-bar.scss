@@ -1,0 +1,47 @@
+.top-bar {
+  padding: 36px 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__icons {
+    display: flex;
+    gap: 32px;
+    background-size: center;
+  }
+
+  &__logo {
+    display: flex;
+  }
+}
+
+.phone-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  color: inherit;
+
+  &__text {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: text-decoration-color 0.2s ease;
+    opacity: 0;
+  }
+
+  &__icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/icon-phone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:hover &__text {
+    text-decoration: none;
+    text-underline-offset: 4px;
+    opacity: 1;
+  }
+}

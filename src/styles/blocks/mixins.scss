@@ -3,16 +3,13 @@
     @content;
   }
 }
-
-@mixin content-padinging-inline {
+@mixin content-pading-inline {
   padding-inline: 20px;
-
-  @include onTablet {
+  @include on-tablet {
     padding-inline: 72px;
   }
 }
-
-@mixin hover($property,$toValue)  {
+@mixin hover($property, $toValue) {
   transition: #{$property} 0.3s;
   &:hover {
     #{$property}: $toValue;

@@ -7,7 +7,14 @@
 @mixin content-padinging-inline {
   padding-inline: 20px;
 
-  @include on-tablet {
+  @include onTablet {
     padding-inline: 72px;
+  }
+}
+
+@mixin hover($property,$toValue)  {
+  transition: #{$property} 0.3s;
+  &:hover {
+    #{$property}: $toValue;
   }
 }

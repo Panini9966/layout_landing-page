@@ -2,24 +2,23 @@
   display: block;
   height: 32px;
   width: 32px;
-  background-size: contain;
+  background-size: cover;
 
   @include hover(transform, scale(1.2));
-
 
   @include on-tablet {
     height: 32px;
     width: 32px;
   }
   &--phone {
-    background-image: url(../images/icon-phone.svg);
+    background-image: url(../images/Icon-Phone-call.svg);
   }
 
   &--menu {
-    background-image: url(../images/burger-menu.svg);
+    background-image: url(../images/Icon-Burger-menu.svg);
 
     &:hover {
-      background-image: url(../images/burger-menu2.svg);
+      background-image: url(../images/Icon-Burger-menu-hover.svg);
     }
   }
 

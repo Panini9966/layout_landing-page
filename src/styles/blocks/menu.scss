@@ -6,7 +6,7 @@
   background-color: #c2c2c2;
   font-weight: 600;
   text-transform: uppercase;
-  color: #1d1d1d;
+  color: $text-menu-color;
   gap: 20px;
 
   &__top {
@@ -19,10 +19,6 @@
 
   &__nav {
     margin-bottom: 40px;
-  }
-
-  &__content {
-    padding-inline: 72px;
   }
 
   &__phone {

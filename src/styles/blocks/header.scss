@@ -1,13 +1,7 @@
 .header {
-  box-sizing: border-box;
-  height: 100vh;
   background-image: url(../images/background-bike.png);
   background-size: cover;
-  background-position: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-position: right;
 
   &__title {
     margin: 0;
@@ -18,11 +12,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
 
-    
+  &__content {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__bottom {
-    padding: 0 72px 130px;
+    padding-bottom: 88px;
+
+    @include on-tablet {
+      padding-bottom: 130px;
+    }
   }
 }

@@ -1,4 +1,3 @@
-
 .page {
   color: $main-text-color;
   font-family: Poppins, sans-serif;
@@ -9,6 +8,7 @@
   &__body {
     margin: 0;
     min-width: 320px;
+    background-color: $text-menu-color;
   }
   &__menu {
     position: fixed;

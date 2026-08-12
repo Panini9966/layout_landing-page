@@ -4,7 +4,7 @@
   }
 }
 
-@mixin onDesktop {
+@mixin on-desktop {
   @media (min-width: $desktop-min-width) {
     @content;
   }
@@ -17,7 +17,7 @@
     padding-inline: 72px;
   }
 
-  @include onDesktop() {
+  @include on-desktop {
     padding-inline: 120px;
     max-width: 1020px;
     margin-inline: auto;

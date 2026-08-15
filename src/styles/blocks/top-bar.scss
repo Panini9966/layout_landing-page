@@ -1,5 +1,4 @@
 .top-bar {
-  padding: 36px 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +14,8 @@
   }
 
   &__logo {
-    height: 56px;
+    height: 38px;
+
     @include on-tablet {
       height: 56px;
     }
@@ -37,15 +37,24 @@
     text-decoration: none;
     transition: text-decoration-color 0.2s ease;
     opacity: 0;
+    display: none;
+
+    @include on-desktop {
+      display: block;
+    }
   }
 
   &__icon {
-    display: block;
     width: 32px;
     height: 32px;
     background-image: url(../images/icon-phone.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    display: none;
+
+    @include on-desktop {
+      display: block;
+    }
   }
 
   &:hover &__text {

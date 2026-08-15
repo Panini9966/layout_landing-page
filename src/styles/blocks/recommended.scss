@@ -18,11 +18,13 @@
   }
 
   &__content {
-    font-weight: 500;
+    grid-column: 1 / -1;
+
     font-size: 23px;
+    font-weight: 500;
     line-height: 140%;
     letter-spacing: 0;
-    grid-column: 1 / -1;
+
     @include on-tablet {
       grid-column: 4 / 7;
     }

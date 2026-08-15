@@ -18,14 +18,6 @@
     padding-block: 36px;
   }
 
-  &__top {
-    margin-bottom: 32px;
-
-    @include on-tablet {
-      margin-bottom: 0;
-    }
-  }
-
   &__nav {
     margin-bottom: 40px;
   }

@@ -1,7 +1,7 @@
 .recommended {
   @include page-grid;
 
-  padding-top: 60;
+  padding-top: 60px;
 
   &__title {
     @include style-title;

@@ -18,6 +18,10 @@
       rel="stylesheet"
       href="src/styles/main.scss"
     />
+    <script
+      type="module"
+      src="src/scripts/main.js"
+    ></script>
     <link
       rel="icon"
       type="image/png"
@@ -345,13 +349,7 @@
             </h2>
 
             <div class="contacts__content">
-              <form
-                class="contacts__form"
-                onsubmit="
-                  this.reset();
-                  return false;
-                "
-              >
+              <form class="contacts__form">
                 <input
                   class="contacts__field"
                   type="text"
